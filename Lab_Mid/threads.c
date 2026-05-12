@@ -49,7 +49,7 @@ int main(int argc, char *arg[]) {
     thread_argument->column_start=0;
     pthread_t thread_1, thread_2;
     /* pthread_create(pthread *thread, void *attribute, void *thread_function, void *function_argument) */
-    pthread_create(&thread_1, NULL, thread_function, thread_argument);
+    pthread_create(&thread_1, NULL, thread_function, (void*)thread_argument);
     void *thread_return_value;
     /* pthread_join(pthread *thread, void **return_value) */
     pthread_join(thread_1, &thread_return_value);

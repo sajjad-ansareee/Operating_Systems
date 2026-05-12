@@ -8,6 +8,7 @@
 #include <sys/stat.h>
 #include <sys/ipc.h>
 #include <sys/shm.h>
+#include <sys/mman.h>
 #include <pthread.h>
 #include <semaphore.h>
 
